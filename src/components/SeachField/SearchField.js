@@ -1,12 +1,12 @@
 import React from "react";
-import './SearchField.css';
+import styles from './SearchField.module.css';
 
 const SearchField = React.forwardRef((props, ref) => (
-    <div className="searchContainer">
-        <div>
+    <div className={styles.searchWrapper}>
+        <div className={styles.searchContainer}>
             <input
                 type="text"
-                className="searchTextInput"
+                className={styles.searchTextInput}
                 ref={ref} name="main_search_field"
                 id="search_field"
                 placeholder="Search"
@@ -14,9 +14,5 @@ const SearchField = React.forwardRef((props, ref) => (
         </div>
     </div>
 ));
-
-SearchField.propTypes = {
-
-};
 
 export default SearchField;

@@ -1,0 +1,81 @@
+.repoCardContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.repoCardMainInfoBlock {
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+}
+
+.repoCardImage {
+    width: 128px;
+    height: 144px;
+    background: linear-gradient(321.69deg, #4481EB 0%, #04BEFE 100%);
+    border-radius: 4px;
+}
+
+.repoCardInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+}
+
+.repoCardName {
+    font-family: 'DM Serif Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #081F32;
+    padding-bottom: 6px;
+}
+
+.repoCardSmallText {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #A5ADBB;
+    padding-top: 2px;
+}
+
+.repoCardDescription {
+    padding-top: 6px;
+    color: #6E798C;
+}
+
+.boldDescriptionText {
+    color: #081F32;
+}
+
+.repoCardOtherInfoBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.repoCardShortInfo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+}
+
+.repoCardShortInfoImage {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.repoCardShortInfoText {
+    padding-left: 12px;
+}
