@@ -4,7 +4,7 @@ import REPO_INFO_WATCHERS from "../../consts/general";
 
 const RepoCardShortInfo = ({icon, number, type}) => {
     return <div className={styles.repoCardShortInfo}>
-        <img src={icon} alt="some image" className={styles.repoCardShortInfoImage} />
+        <img src={icon} alt={`repo card ${type}`} className={styles.repoCardShortInfoImage} />
         <p className={`${styles.repoCardSmallText} 
             ${styles.repoCardShortInfoText} 
             ${type === REPO_INFO_WATCHERS && styles.boldDescriptionText}`}>

@@ -2,16 +2,16 @@ import React from "react";
 import styles from './RepoCard.module.css';
 import RepoCardShortInfo from "./RepoCardShortInfo";
 import RepoCardMainInfo from "./RepoCardMainInfo";
-import logo from '../../assets/svg/logo.svg';
-import star from '../../assets/svg/star.svg';
-import watcher from '../../assets/svg/watcher.svg';
+import logoIcon from '../../assets/svg/logo.svg';
+import starIcon from '../../assets/svg/star.svg';
+import watcherIcon from '../../assets/svg/watcher.svg';
 
-const RepoCard = () => (
+const RepoCard = ({name, description, language, author, stars, watchers}) => (
     <div className={styles.repoCardContainer}>
-        <RepoCardMainInfo name="Repo name" description="Description" language="Language" author="Author" image={logo} />
+        <RepoCardMainInfo name={name} description={description} language={language} author={author} image={logoIcon} />
         <div className={styles.repoCardOtherInfoBlock}>
-            <RepoCardShortInfo type="stars" icon={star} number={146} />
-            <RepoCardShortInfo type="watchers" icon={watcher} number={146} />
+            <RepoCardShortInfo type="stars" icon={starIcon} number={stars} />
+            <RepoCardShortInfo type="watchers" icon={watcherIcon} number={watchers} />
         </div>
     </div>
 );
